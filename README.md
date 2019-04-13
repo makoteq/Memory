@@ -1,1 +1,2 @@
-# Memo game with back-end
+# Memo game 
+built with jquery, sweetalert
