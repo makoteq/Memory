@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+     crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styl_index.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+    </style>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="HTML, Memo, Memory,js,javascript,game">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="description" content="Memo game by makoteq">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Memory the epic game - Home page </title>
+    <script src="index_code.js"></script>
+</head>
+
+<body>
+    <!--facebook api-->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.2&appId=822631814741758';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header class="header">
+        <a href="index.html">
+            <p class="hed">Memory</p>
+        </a>
+        <i id="que" onclick="howToPlay()" class="fas fa-question"></i>
+    </header>
+    <div id="contener">
+        <div class="big" id="start">
+            <button id="button" class="button">Let's Play</button>
+            <div class="con">
+                <a href="gra.html?mode=Easy&razy=8">
+                    <div class="tryb" id="latwy">
+                        <p class="u">
+                            <i class="far fa-smile"></i>
+                            <i>Easy</i>
+                        </p>
+                    </div>
+                </a>
+                <a href="gra.html?mode=Medium&razy=12">
+                    <div class="tryb" id="sredni">
+                        <p class="u">
+                            <i class="far fa-meh"></i>
+                            <i>Medium</i>
+                        </p>
+                    </div>
+                </a>
+                <a href="gra.html?mode=Hard&razy=12">
+                    <div class="tryb" id="trudny">
+                        <p class="u">
+                            <i class="far fa-frown"></i>
+                            <i>Hard</i>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="top_players.html">
+            <div class="small" id="top">
+                <p class="tp">Top Players:</p>
+                <div id="list">
+                </div>
+            </div>
+        </a>
+        <div class="small" id="inne">
+            <div class="fb-like" data-href="https://www.facebook.com/Memory-277876272890307/?modal=admin_todo_tour" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="paragraf">2018&copy;<a class="hip" target="_blank" href="https://github.com/makoteq">makoteq</a></p>
+    </footer>
+</body>
+
+</html>

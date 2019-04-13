@@ -1,0 +1,204 @@
+body {
+  background-image: url("img/hex.png");
+  color: white;
+  font-family: "Bree Serif", serif;
+  margin: 0;
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.par {
+  margin-bottom: 0.5em;
+}
+.paragraf {
+  margin: 0;
+}
+.header {
+  color: white;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 5vh;
+  border-bottom: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hed {
+  text-shadow: 1px 1px red;
+  font-size: 3em;
+  margin: 0;
+}
+.big {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 1vh;
+  box-shadow: inset 0 0 30px red;
+  text-align: center;
+}
+.big:hover {
+  background-color: #e6e6e6;
+}
+.small {
+  width: 49%;
+  height: 200px;
+  background-color: white;
+  box-shadow: inset 0 0 30px red;
+  float: left;
+  text-align: center;
+}
+.small:hover {
+  background-color: #e6e6e6;
+}
+#contener {
+  width: 50%;
+  height: 42vh;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer {
+  font-size: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px black solid;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  height: 20px;
+}
+.paragraf {
+  color: black;
+  margin: 0;
+}
+.button {
+  border-radius: 50px;
+  background-color: white;
+  border: 5px solid red;
+  font-size: 2em;
+  color: red;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2%;
+  transition: background-color linear 1s;
+}
+.button:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+.button:focus {outline:0;}
+.con {
+  text-align: center;
+  height: 50%;
+}
+
+.tryb {
+  font-size: 1em;
+  border-radius: 50px;
+  color: red;
+  text-decoration: none;
+  display: none;
+  float: left;
+  min-width: 30%;
+  background-color: white;
+}
+.tryb:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+#latwy {
+  margin-left: 3%;
+  margin-right: 2%;
+}
+#trudny {
+  margin-right: 3%;
+  margin-left: 2%;
+}
+#list {
+  color: black;
+  text-align: center;
+}
+
+.hip {
+  color: black;
+}
+.tp {
+  color: red;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+#inne {
+  font-size: 1.5em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+#que {
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+@media screen and (max-width: 600px) {
+  #contener {
+    width: 100vw;
+    text-align: none;
+    margin: 0;
+  }
+  .big {
+    width: 100%;
+    float: none;
+    margin: 0;
+    height: 160px;
+  }
+  .small {
+    width: 100%;
+    float: none;
+    margin-top: 2vh;
+    height: 160px;
+  }
+  #inne {
+    float: none;
+    margin-left: 0;
+  }
+  .button {
+    font-size: 1em;
+  }
+  tr {
+    max-height: 2vh;
+  }
+  .tp {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  .u {
+    font-size: 0.8em;
+  }
+  .hed {
+    font-size: 2em;
+  }
+  .header {
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 350px) {
+  .tp {
+    font-size: 1.4em;
+  }
+  .button {
+    padding: 10px;
+  }
+}
